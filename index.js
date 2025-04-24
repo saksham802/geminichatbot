@@ -21,7 +21,7 @@ app.post('/webhook', async (req, res) => {
       fulfillmentText: reply,
     });
   } catch (error) {
-    console.error(error);
+    console.error(error);  // Log the error to the server console
     res.json({
       fulfillmentText: "Sorry, I couldn’t get that. Try again!",
     });
